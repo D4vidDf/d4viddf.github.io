@@ -1,0 +1,32 @@
+title: d4viddf.com
+author: D4vidDf
+email: d4viddf@d4viddf.com # Optional: Minima can display this
+description: >- # Optional: Minima can display this in the <head>
+  Portfolio and personal site of D4vidDf, a cross-platform application developer.
+
+# Minima theme settings
+theme: minima
+
+# Minima: Header page links
+header_pages:
+  - about.html # This will link to /about.html or index.html if permalink is set
+  - privacy.html
+
+# Build settings
+markdown: kramdown # Default for GitHub Pages
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically excluded from
+# the build process for ALL environments and modes.
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

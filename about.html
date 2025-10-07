@@ -1,11 +1,171 @@
----
-layout: page
-title: Sobre Mí
-permalink: /
----
-<main>
-    <p>Hola, soy D4vidDf, un desarrollador de aplicaciones multiplataforma de 25 años con una profunda pasión por la tecnología.</p>
-    <p>En 2022, mi vida dio un giro con el diagnóstico de una enfermedad neuromuscular. Esta condición limita mi capacidad para dedicarme al desarrollo a tiempo completo, pero no ha mermado mi espíritu creador.</p>
-    <p>Desde diciembre de 2024, una silla de ruedas motorizada me acompaña en mis salidas, brindándome una nueva perspectiva y la energía renovada para impulsar ElPozoDisca, un proyecto dedicado a dar voz y visibilidad a las personas con discapacidad.</p>
-    <p>Esta página web es mi portafolio digital: un reflejo de las aplicaciones que he construido y un espacio para los futuros proyectos que, con la energía que dispongo, seguiré desarrollando.</p>
-</main>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Sobre Mí - D4vidDf</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+
+    <link rel="icon" href="resources/logo.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#324574",
+                        "primary-dark": "#7a91c7",
+                        "background-light": "#F7F9FF",
+                        "background-dark": "#0D1117",
+                        "text-light": "#0D1117",
+                        "text-dark": "#E6EDF3",
+                        "card-light": "#FFFFFF",
+                        "card-dark": "#161B22",
+                        "accent-light": "#D9E3FC",
+                        "accent-dark": "#1E293B",
+                        "focus-ring": "#7C9CFF"
+                    },
+                    fontFamily: {
+                        display: ["Lato", "sans-serif"],
+                        body: ["Roboto", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "1rem",
+                        lg: '1.5rem'
+                    },
+                    keyframes: {
+                        'blob-move-1': { '0%': { transform: 'translate(0px, 0px) scale(1) rotate(0deg)' }, '25%': { transform: 'translate(30px, -50px) scale(1.1) rotate(20deg)' }, '50%': { transform: 'translate(-20px, 40px) scale(0.9) rotate(-10deg)' }, '75%': { transform: 'translate(50px, 20px) scale(1.2) rotate(30deg)' }, '100%': { transform: 'translate(0px, 0px) scale(1) rotate(0deg)' } },
+                        'blob-move-2': { '0%': { transform: 'translate(0px, 0px) scale(1) rotate(0deg)' }, '25%': { transform: 'translate(-40px, 30px) scale(1.2) rotate(-15deg)' }, '50%': { transform: 'translate(20px, -50px) scale(0.8) rotate(25deg)' }, '75%': { transform: 'translate(-30px, -20px) scale(1.1) rotate(-5deg)' }, '100%': { transform: 'translate(0px, 0px) scale(1) rotate(0deg)' } },
+                        'bounce-slow': { '0%, 100%': { transform: 'translateY(-25%)', animationTimingFunction: 'cubic-bezier(0.8,0,1,1)' }, '50%': { transform: 'none', animationTimingFunction: 'cubic-bezier(0,0,0.2,1)' } }
+                    },
+                    animation: {
+                        'blob-1': 'blob-move-1 20s ease-in-out infinite',
+                        'blob-2': 'blob-move-2 25s ease-in-out infinite alternate',
+                        'bounce-slow': 'bounce-slow 2s infinite'
+                    }
+                },
+            },
+        };
+    </script>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-body text-text-light dark:text-text-dark transition-colors duration-300">
+
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:top-4 focus:left-4 focus:px-4 focus:py-2 focus:bg-card-light focus:dark:bg-card-dark focus:text-text-light focus:dark:text-text-dark focus:rounded-lg focus:ring-2 focus:ring-focus-ring">
+        Saltar al contenido principal
+    </a>
+
+    <div aria-hidden="true" class="background-container" role="presentation">
+        <div class="background-shape" id="shape-1"><svg viewBox="0 0 712 712" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M217.564 134.503C316.957 35.1098 478.105 35.1098 577.498 134.503C676.89 233.896 676.89 395.043 577.498 494.436L494.436 577.498C395.043 676.89 233.896 676.89 134.503 577.498C35.1098 478.105 35.1098 316.957 134.503 217.564L217.564 134.503Z" />
+            </svg></div>
+        <div class="background-shape" id="shape-2"><svg viewBox="0 0 712 712" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M491.696 196.562C474.441 169.182 456.88 141.421 433.55 119.679C410.22 97.8834 379.998 82.4852 349.011 84.4913C321.801 86.2805 296.582 101.353 276.672 121.035C256.762 140.716 241.294 164.952 226.081 188.971C184.935 253.818 143.737 318.664 102.59 383.564C83.0381 414.36 62.9753 446.512 57.564 483.219C51.0295 527.57 68.6419 572.734 99.8847 602.229C132.557 633.08 185.496 630.586 225.264 622.128C268.861 612.856 311.488 595.398 355.953 595.452C394.037 595.452 430.844 608.356 467.907 617.736C504.918 627.062 544.687 632.809 580.422 618.929C624.785 601.741 656.64 552.89 655.772 502.737C654.955 456.976 606.151 378.033 606.151 378.033C606.151 378.033 529.84 257.057 491.696 196.562Z" />
+            </svg></div>
+    </div>
+
+    <div class="relative z-10 min-h-screen flex flex-col">
+        <header class="sticky top-0 z-30 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm"
+            role="banner">
+            <div class="container mx-auto flex justify-between items-center py-4 px-4 sm:px-6 lg:px-8">
+                <a href="/"
+                    class="flex items-center space-x-3 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background-light dark:focus-visible:ring-offset-background-dark focus-visible:ring-focus-ring"
+                    aria-label="Página de inicio de D4vidDf">
+                    <img src="resources/logo.png" alt="Logotipo de D4vidDf" class="h-12 w-12">
+                    <span class="text-xl sm:text-xl font-bold font-display">D4vidDf</span>
+                </a>
+
+                <nav aria-label="Navegación principal" class="hidden md:flex items-center space-x-6">
+                    <ul class="flex items-center space-x-6">
+                        <li><a class="hover:text-primary dark:hover:text-primary-dark transition-colors rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus-ring"
+                                href="/#projects">Proyectos</a></li>
+                        <li><a class="text-primary dark:text-primary-dark font-bold transition-colors rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus-ring"
+                                href="/about.html" aria-current="page">Sobre Mí</a></li>
+                        <li><a class="hover:text-primary dark:hover:text-primary-dark transition-colors rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus-ring"
+                                href="/privacy.html">Política de Privacidad</a></li>
+                    </ul>
+                </nav>
+                <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menú de navegación"
+                    class="md:hidden p-2 rounded-md hover:bg-accent-light dark:hover:bg-accent-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus-ring"
+                    id="menu-btn">
+                    <span aria-hidden="true" class="material-icons-round">menu</span>
+                </button>
+            </div>
+        </header>
+
+        <div aria-label="Navegación móvil"
+            class="hidden md:hidden bg-card-light dark:bg-card-dark rounded-lg p-4 fixed top-24 right-4 z-20 shadow-xl"
+            id="mobile-menu" role="navigation">
+            <ul class="flex flex-col space-y-2">
+                <li><a class="block py-2 hover:text-primary dark:hover:text-primary-dark transition-colors rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus-ring"
+                        href="/#projects">Proyectos</a></li>
+                <li><a class="block py-2 text-primary dark:text-primary-dark font-bold transition-colors rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus-ring"
+                        href="/about.html" aria-current="page">Sobre Mí</a></li>
+                <li><a class="block py-2 hover:text-primary dark:hover:text-primary-dark transition-colors rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus-ring"
+                        href="/privacy.html">Política de Privacidad</a></li>
+            </ul>
+        </div>
+        
+        <main role="main" class="flex-grow" id="main-content">
+            <section aria-labelledby="about-heading" class="py-16 sm:py-24 flex items-center">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="max-w-3xl mx-auto bg-card-light dark:bg-card-dark p-8 sm:p-12 rounded-lg shadow-lg">
+
+                        <h1 class="text-4xl md:text-4xl font-bold mb-8 text-primary dark:text-primary-dark font-display"
+                            id="about-heading">
+                            Sobre Mí
+                        </h1>
+
+                        <div class="text-lg text-text-light/90 dark:text-text-dark/90 space-y-6">
+                            <p>Hola, soy D4vidDf, un desarrollador de aplicaciones multiplataforma de 25 años con una
+                                profunda pasión por la tecnología.</p>
+                            <p>En 2022, mi vida dio un giro con el diagnóstico de una enfermedad neuromuscular rara. Esta
+                                condición limita mi capacidad para dedicarme al desarrollo a tiempo completo, teniendo solo 30 minutos al día para programar.</p>
+                            <p>Desde diciembre de 2024, uso una silla de ruedas motorizada para poder salir a la calle. Gracias a la energía recuperada 
+                                con el uso de la silla de ruedas, he podido lanzar ElPozoDisca, un foro para personas con discapacidad. </p>
+                            <p>Actualmente estoy desarrollando PillPal, una aplicación móvil para ayudarme con la gestión compleja de mi medicación.
+                                Lleva en desarrollo desde 2023 y espero lanzarla en 2026.
+                            </p>
+                            <p>Esta página web es mi portafolio digital: un reflejo de las aplicaciones que he
+                                construido y un espacio para los futuros proyectos que, con la energía que dispongo,
+                                seguiré desarrollando.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="text-center py-8 text-text-light/70 dark:text-text-dark/70" role="contentinfo">
+            <p>© 2025 D4vidDf. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+            menuBtn.setAttribute('aria-expanded', !isExpanded);
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
